@@ -3,12 +3,6 @@ import socket
 import query
 
 
-bmo = query.Apic('bmoapic03.jkhy.com')
-mmo = query.Apic('mmoapic03.jkhy.com')
-lks = query.Apic('lksapic03.jkhy.com')
-smo = query.Apic('smoapic03.jkhy.com')
-
-
 def find_vrf(apic, vrf):
 	if ':' in vrf:
 		tn = vrf[:vrf.find(':')]
